@@ -9,7 +9,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatButtonModule } from "@angular/material/button";
-import { MatTableModule } from '@angular/material/table' ;
+import { DataTablesModule } from "angular-datatables";
 import { MatCardModule } from '@angular/material/card' ;
 import { MatDialogModule} from '@angular/material/dialog' ;
 import {MatInputModule} from '@angular/material/input';
@@ -68,7 +68,7 @@ export const ROUTES: Routes = [
     MatIconModule,
     MatTooltipModule,
     MatButtonModule,
-    MatTableModule,
+    DataTablesModule,
     MatDialogModule,
     MatInputModule,
     MatSnackBarModule,
