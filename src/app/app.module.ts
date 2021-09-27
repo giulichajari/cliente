@@ -26,12 +26,19 @@ import { DialogDeleteComponent } from "./cliente/common/dialogdelete.component";
 import { LoginComponent } from "./login/login.component";
 import { JwtInterceptor } from "./security/jwt.interceptor";
 import { AuthGuard } from "./security/auth.guard";
+import { VentaComponent } from './venta/venta.component';
+import { dialogVentacomponent } from "./venta/dialog/dialogventa.component";
 
 export const ROUTES: Routes = [
   {
     path: "Home",
     canActivate: [AuthGuard],
     component: HomeComponent,
+  },
+  {
+    path: "Venta",
+    canActivate: [AuthGuard],
+    component: VentaComponent,
   },
   {
     path: "",
@@ -55,9 +62,11 @@ export const ROUTES: Routes = [
     AppComponent,
     DialogClienteComponent,
     DialogDeleteComponent,
+    dialogVentacomponent,
     SidenavComponent,
     LoginComponent,
-    ClienteComponent
+    ClienteComponent,
+    VentaComponent
   ],
   imports: [
     RouterModule.forRoot(ROUTES, { relativeLinkResolution: 'legacy' }),

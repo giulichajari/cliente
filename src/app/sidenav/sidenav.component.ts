@@ -13,6 +13,7 @@ export class SidenavComponent {
 
   public routeLinks = [
     { link: "Home", name: "Escritorio", icon: "dashboard" },
-    { link: "Clientes", name: "Cliente", icon: "storage" }
+    { link: "Clientes", name: "Cliente", icon: "storage" },
+    { link: "Venta", name: "Ventas", icon: "point_of_sale" }
   ];
 }
